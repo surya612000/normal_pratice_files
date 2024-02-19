@@ -1,1 +1,4 @@
-print("Hello World!")
+input_data=input()
+
+
+print(input_data)

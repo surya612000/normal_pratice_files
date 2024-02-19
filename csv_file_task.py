@@ -17,13 +17,17 @@ required_temperature = ["-20°C", "2-8°C", "15-25°C"]
 le=[]
 br=[]
 
-
-max_rows = int(input())
+p=[]
+m=[]
+wd=[]
+pm=[]
+ret=[]
+max_rows = 5
 
 
 
 data_lists = {
-    "Product": product[random.randint(0,len(product)-1)],
+    "Product": [p.append(product[random.randint(0,len(product)-1)]) for _ in range(5)],
     "Mode": mode[random.randint(0,len(mode)-1)],
     "weight_divisor": weight_divisor[random.randint(0,len(weight_divisor)-1)],
     "payment_mode": payment_mode[random.randint(0,len(payment_mode)-1)],
