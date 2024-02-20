@@ -33,8 +33,8 @@ try:
     for pfile in files:
         print(pfile)
 
-except FileNotFoundError as e:
-    print(e)
+except FileNotFoundError as error_m:
+    print(error_m)
 
 
 
