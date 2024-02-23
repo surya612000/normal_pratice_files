@@ -1,5 +1,5 @@
 import threading
- 
+from time import sleep
  
 def print_cube(num):
     print("Cube: {}" .format(num * num * num))
@@ -24,13 +24,17 @@ if __name__ =="__main__":
     t4=threading.Thread(target=kk,args=(10,))
     t1.start()
     t2.start()
-    t3.start()
     t4.start()
+    sleep(1)
+    t3.start()
+    
 
     
-    t1.join()
-    t2.join()
-    t4.join()
+    # t1.join()
+    # t2.join()
+    # t4.join()
+
+    print("srua")
     
  
     print("Done!")
