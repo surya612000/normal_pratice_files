@@ -20,7 +20,7 @@ def kkk(num):
     print(os.getpid())
 
 def kk(num):
-    print("extra_function222222222222222:{}".format(num*1000))
+    print("extra_function:{}".format(num*1000))
     print(os.getpid())
 
 
