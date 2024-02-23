@@ -3,9 +3,10 @@ import glob
 import sys
 import shutil
 
-def get_pdf(folder_path):
+def get_pdf(source_path):
     files = []
-    for pfile in glob.glob(os.path.join(folder_path, '*.pdf')):
+    unique_files = set(glob.glob(os.path.join(source_path, '*.pdf')))
+    for pfile in unique_files:
         files.append(pfile)
     return files
 
