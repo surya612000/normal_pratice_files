@@ -25,7 +25,6 @@ def kk(num):
 
 
  
-<<<<<<< Updated upstream
 
 t1 = threading.Thread(target=print_square, args=(10,))
 t2 = threading.Thread(target=print_cube, args=(10,))
@@ -37,21 +36,6 @@ t4.start()
 sleep(1)
 t3.start()
 print(os.getpid())
-=======
-if __name__ =="__main__":
-    t1 =threading.Thread(target=print_square, args=(10,))
-    t2 =threading.Thread(target=print_cube, args=(10,))
-    t3=threading.Thread(target=kkk,args=(10,))
-    t4=threading.Thread(target=kk,args=(10,))
-
-
-
-    t1.start()
-    t2.start()
-    t4.start()
-    sleep(1)
-    t3.start()
->>>>>>> Stashed changes
 
     
 t2.join()
